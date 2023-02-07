@@ -1,5 +1,11 @@
+<?php
+    echo "qualquer coisa ai";
+
+?>
+
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
@@ -90,13 +96,5 @@
     	$("input#nu_cpfcnpj").inputmask({mask: ['999.999.999-99', '99.999.999/9999-99'], keepStatic: true});
     });
   </script>
-
-
-<footer>
-    <div class="container_footer">
-        By Angelo Rossi
-        <a href="https://github.com/AngeloCRossi" target="_blank"><img class="logo_contato" src="IMAGENS/GitHub-Mark.png"></a>
-        <a href="https://www.linkedin.com/in/angelo-rossi-%E0%AE%83-a540a221/" target="_blank"><img class="logo_contato" src="IMAGENS/LinkedIn_logo_initials.png"></a>
-    </div>
-</footer>
 </html>
+
