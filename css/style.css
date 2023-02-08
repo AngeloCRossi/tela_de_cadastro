@@ -1,4 +1,28 @@
+.banner {
+    display: block;
+    width: 100%;
+
+}
+
+body {
+    background-color: #93BFCF;
+}
+
+.titulo_navbar{
+    display: flex ;
+    justify-content: space-around;
+    font-size: 2em;
+    color: orange;
+    background-color: #0081C9;
+    align-items: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+    }
+
 footer {
+    display: flex;
     background-color: #0081C9;
     color: #FFC93C;
     font-size: 1em;
