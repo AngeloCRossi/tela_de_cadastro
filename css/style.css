@@ -4,7 +4,7 @@
 
 }
 
-body {
+.body {
     background-color: #93BFCF;
 }
 
@@ -20,6 +20,10 @@ body {
 .mb-0 {
     margin-bottom: 0;
     }
+
+#produto {
+    padding-left: 0;
+}
 
 footer {
     display: flex;

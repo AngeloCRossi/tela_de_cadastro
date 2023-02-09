@@ -14,7 +14,7 @@
     </head>
 
 
-    <body>
+    <body class="body">
 
         <div class="container">
             <header>
@@ -63,11 +63,31 @@
                             <div class="col-sm-7 col-xl-7 col-md-7 col-lg-7">
                                 <div class="form-group">
                                     <label class="mb-0" for="no_cliente">Nome do cliente:</label>
-                                    <input type="text" class="form-control" id="no_cliente" placeholder="Tipo de pessoa" name="no_cliente">
+                                    <input type="text" class="form-control" id="no_cliente" placeholder="Nome do cliente" name="no_cliente">
                                 </div>
                             </div>
                         </div>
                         
+                        <div id="produto" class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
+                            <div class="form-group">
+                                <label class="mb-0" for="no_produto">Produto:</label>
+                                <select class="form-control" id="no_produto">
+                                    <option value="1" name="Deposito" selected>Conta Depósito</option>
+                                    <option value="2" name="Cambio">Câmbio</option>
+                                    <option value="3" name="Habitacao">Habitação</option>
+                                    <option value="4" name="Penhor">Penhor</option>
+                                    <option value="5" name="Acoes">Ações Online</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
+                            <div class="form-group">
+                                <label class="mb-0" for="dt_cadastro">Data do cadastro:</label>
+                                <input type="date" class="form-control" id="dt_cadastro" name="dt_cadastro">
+                            </div>
+                        </div>
+
+
                         <div class="form-group">
                             <label class="mb-0" for="pwd">Password:</label>
                             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
