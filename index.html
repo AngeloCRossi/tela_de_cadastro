@@ -43,6 +43,7 @@
                     
                 </div-->
                 <div id="menu1" class="tab-pane fade in active panel-body">
+                    <h3>Cadastro de movimentações</h3>
                     <form>
                         <div class="row">
                             <div class="col-sm-2 col-xl-2 col-md-2 col-lg-2">
@@ -86,13 +87,17 @@
                                 <input type="date" class="form-control" id="dt_cadastro" name="dt_cadastro">
                             </div>
                         </div>
-
-
-                        <div class="form-group">
-                            <label class="mb-0" for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
+                            <div class="form-group">
+                                <label class="mb-0" for="dt_movimentacao">Data da movimentação:</label>
+                                <input type="date" class="form-control" id="dt_movimentacao" name="dt_movimentacao">
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <div class="form-group">
+                            <label class="mb-0" for="txt_detalhes">Detalhes da movimentação:</label>
+                            <input type="password" class="form-control" id="txt_detalhes" placeholder="Descreva maiores detalhes da movimentação" name="txt_detalhes">
+                        </div>
+                        <button type="submit" class="btn btn-default">Cadastrar</button>
                     </form>
                 </div>
                 <div id="menu2" class="tab-pane fade">
