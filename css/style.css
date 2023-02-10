@@ -8,6 +8,9 @@
     background-color: #93BFCF;
 }
 
+h3 {
+    font-weight: bold;}
+    
 .titulo_navbar{
     display: flex ;
     justify-content: space-around;
@@ -35,5 +38,6 @@ footer {
     margin-bottom: 0;
 }
 
-h3 {
-    font-weight: bold;}
+table, th, td{
+    border: solid black;
+}
