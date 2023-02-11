@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $("input#nu_cpfcnpj").inputmask({mask: ['999.999.999-99'], keepStatic: true});
+    $("input#vl_movimentacao").inputmask({mask: ['R$ 999.999,00'], keepStatic: false});
+    dt_movimentacao
 });
 
 
