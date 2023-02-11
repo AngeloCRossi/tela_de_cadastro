@@ -16,7 +16,7 @@
             <header>
                 <img class="banner" src="imagens/banner.jpg" alt="Banner com logo do banco">
             </header>
-            <p class="titulo_navbar">Sistema de cadastro de movimentação</p>
+            <p class="titulo_pagina">Sistema de cadastro de movimentação</p>
 
             <ul class="nav nav-tabs">
                 <li class="active">
@@ -32,7 +32,7 @@
 
             <div class="tab-content">
                 <div id="menu1" class="tab-pane fade in active panel-body">
-                    <h3>Cadastro de movimentações</h3>
+                    <h3 id="titulo_navbar">Cadastro de movimentações</h3>
                     <form>
                         <div class="row">
                             <div class="col-sm-2 col-xl-2 col-md-2 col-lg-2">
@@ -73,8 +73,8 @@
                         </div>
                         <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                             <div class="form-group">
-                                <label class="mb-0" for="dt_cadastro">Data do cadastro:</label>
-                                <input type="date" class="form-control" id="dt_cadastro" name="dt_cadastro">
+                                <label class="mb-0" for="dt_movimentacao">Data da movimentação:</label>
+                                <input type="date" class="form-control" id="dt_movimentacao" name="dt_movimentacao">
                             </div>
                         </div>
                         <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
@@ -91,16 +91,54 @@
                     </form>
                 </div>
                 <div id="menu2" class="tab-pane fade">
-                    <h3>Visualização de Cadastro</h3>
+                    <h3 id="titulo_navbar">Visualização de Cadastro</h3>
                     <p>À desenvolver</p>
                 </div>
                 <div id="menu3" class="tab-pane fade">
-                    <h3>Lista de Movimentações</h3>
+                    <h3 id="titulo_navbar">Lista de Movimentações</h3>
                     <table class="table_mov_sup">
-                        <th>Movimentações suspeitas</th>
-                        <tr>
-                            <td> fulaninho da silva</td> 
-                            <td>bla bla bla</td>
+                        <th id="th_table" colspan="5">Movimentações suspeitas</th>
+                        <tr id="sub_titulo_tb">
+                            <td id="td_header">CPF/CNPJ</td>
+                            <td id="td_header">Nome</td>
+                            <td id="td_header">Produto</td>
+                            <td id="td_header">Data da movimentação</td>
+                            <td id="td_header">Valor da movimentação</td>
+                        </tr>
+                        <tr id="tr_linha">
+                            <td id="td_linha">123.456.789.00</td>
+                            <td id="td_linha">Silvano da Silva e Silva</td>
+                            <td id="td_linha">Deposito</td>
+                            <td id="td_linha">01/01/2023</td>
+                            <td id="td_linha">R$ 257.986,57</td>
+                        </tr>
+                        <tr id="tr_linha">
+                            <td id="td_linha">987.654.321-99</td>
+                            <td id="td_linha">Brederodes Berna</td>
+                            <td id="td_linha">Ações Online</td>
+                            <td id="td_linha">14/02/2023</td>
+                            <td id="td_linha">R$ 1.897.359,56</td>
+                        </tr>
+                        <tr id="tr_linha">
+                            <td id="td_linha">943.167.183-58</td>
+                            <td id="td_linha">Fulano de Matos Cardoso</td>
+                            <td id="td_linha">Câmbio</td>
+                            <td id="td_linha">01/02/2023</td>
+                            <td id="td_linha">R$ 786.384,25</td>
+                        </tr>
+                        <tr id="tr_linha">
+                            <td id="td_linha">183.927.456-89</td>
+                            <td id="td_linha">Josefa Arantes</td>
+                            <td id="td_linha">Penho</td>
+                            <td id="td_linha">25/01/2023</td>
+                            <td id="td_linha">R$ 89.597,52</td>
+                        </tr>
+                        <tr id="tr_linha">
+                            <td id="td_linha">456.978.123-46</td>
+                            <td id="td_linha">Jéssica Ribeiro Matias</td>
+                            <td id="td_linha">Habitação</td>
+                            <td id="td_linha">05/02/2023</td>
+                            <td id="td_linha">R$ 1.576.978,25</td>
                         </tr>
                     </table>
                 </div>

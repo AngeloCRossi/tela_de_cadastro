@@ -8,10 +8,12 @@
     background-color: #93BFCF;
 }
 
-h3 {
-    font-weight: bold;}
+#titulo_navbar {
+    font-weight: bold;
+    text-align: center;
+}
     
-.titulo_navbar{
+.titulo_pagina{
     display: flex ;
     justify-content: space-around;
     font-size: 2em;
@@ -20,12 +22,35 @@ h3 {
     align-items: center;
 }
 
+
 .mb-0 {
     margin-bottom: 0;
     }
 
 #produto {
     padding-left: 0;
+}
+
+table, th, td{
+    border: solid black 1px;
+}
+
+.table_mov_sup {
+    width: 100%;
+}
+
+#th_table, #sub_titulo_tb {
+    text-align: center;
+    font-weight: bold;
+}
+
+#th_table {
+    font-size: 1.2em;
+}
+
+#tr_linha {
+    text-align: center;
+    font-size: 1.5 em;
 }
 
 footer {
@@ -38,8 +63,4 @@ footer {
     clear: both;
     position: absolute;
     bottom: 0;
-}
-
-table, th, td{
-    border: solid black;
 }
