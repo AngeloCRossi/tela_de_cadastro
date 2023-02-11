@@ -29,13 +29,15 @@ h3 {
 }
 
 footer {
+    width: 100%;
     display: flex;
     background-color: #0081C9;
     color: #FFC93C;
     font-size: 1em;
     text-align: center;
     clear: both;
-    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 table, th, td{
