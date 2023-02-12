@@ -22,13 +22,20 @@
     align-items: center;
 }
 
-
 .mb-0 {
     margin-bottom: 0;
     }
 
 #produto {
     padding-left: 0;
+}
+
+#btn_cadastrar {
+    background-color: rgb(95, 185, 95);
+}
+
+#btn_cancelar {
+    background-color:  rgb(233, 122, 122);
 }
 
 table, th, td{
@@ -63,4 +70,11 @@ footer {
     clear: both;
     position: absolute;
     bottom: 0;
+}
+
+
+@media screen and (max-heigth: 800px) {
+    footer {
+        position: relative;
+    }
 }

@@ -36,3 +36,15 @@ $(document).on("change","select#tp_pessoa", function(){
 
 
 })
+
+
+document.getElementById("btn_cadastrar").addEventListener("click",function() {
+    var valor_CPF = document.getElementById("input#nu_cpfcnpj").value;
+    var valor_nome = document.getElementById("input#no_cliente").value;
+    var valor_produto = document.getElementById("select#no_produto").name;
+    document.getElementById("nu_cpfcnpj_visualização").value = valor_CPF;
+
+
+
+
+})
