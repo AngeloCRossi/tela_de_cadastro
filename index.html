@@ -66,11 +66,11 @@
                                 <div class="form-group">
                                     <label class="mb-0" for="no_produto">Produto:</label>
                                     <select class="form-control" id="no_produto">
-                                        <option value="1" name="Deposito" selected>Conta Depósito</option>
-                                        <option value="2" name="Cambio">Câmbio</option>
-                                        <option value="3" name="Habitacao">Habitação</option>
-                                        <option value="4" name="Penhor">Penhor</option>
-                                        <option value="5" name="Acoes">Ações Online</option>
+                                        <option value="Deposito" name="Deposito" selected>Conta Depósito</option>
+                                        <option value="Cambio" name="Cambio">Câmbio</option>
+                                        <option value="Habitacao" name="Habitacao">Habitação</option>
+                                        <option value="Penhor" name="Penhor">Penhor</option>
+                                        <option value="Acoes" name="Acoes">Ações Online</option>
                                     </select>
                                 </div>
                             </div>
@@ -82,10 +82,29 @@
                                 </div>
                             </div>
 
+                            <!-- input type="date" id="data" required>
+                                <p id="exibirData"></p -->
+
+                                    <script>
+                                        document.getElementById("dt_movimentacao").addEventListener("blur", function(event) {
+                                        var data = event.target.value;
+                                        var dataFormatada = new Date(data).toLocaleDateString("pt-BR", {
+                                            day: "2-digit",
+                                            month: "2-digit",
+                                            year: "numeric"
+                                        });
+        
+                                        document.getElementById("dt_movimentacao").innerHTML = dataFormatada;
+                                        });
+                                    </script>
+
+
+
+
                             <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
                                     <label class="mb-0" for="vl_movimentacao">Valor da movimentação:</label>
-                                    <input type="text" class="form-control" id="vl_movimentacao" name="vl_movimentacao" placeholder="R$0,00">
+                                    <input type="text" class="form-control vl_movimentacao" id="vl_movimentacao" name="vl_movimentacao" placeholder="R$0,00">
                                 </div>
                             </div>
                         </div>
@@ -101,12 +120,6 @@
                         <button type="reset" id="btn_cancelar" class="btn btn-default">Cancelar</button>
                     </form>
                 </div>
-
-
-
-
-
-
 
                 <div id="menu2" class="tab-pane fade">
                     <h3 id="titulo_navbar">Visualização de Cadastro</h3>
@@ -152,19 +165,13 @@
 
                         <div class="row_3">
                             <div class="form-group">
-                                <label class="mb-0" for="txt_detalhes">Detalhes da movimentação:</label>
-                                <textarea type="text" class="form-control" id="txt_detalhes" placeholder="Descreva maiores detalhes da movimentação" name="txt_detalhes" readonly></textarea>
+                                <label class="mb-0" for="txt_detalhes_visualizacao">Detalhes da movimentação:</label>
+                                <input type="text" class="form-control" id="txt_detalhes_visualizacao" placeholder="Descreva maiores detalhes da movimentação" name="txt_detalhes_visualizacao" readonly></textarea>
                             </div>
                         </div>
                         
                     </form>
                 </div>
-
-
-
-
-
-
 
                 <div id="menu3" class="tab-pane fade">
                     <h3 id="titulo_navbar">Lista de Movimentações</h3>
@@ -234,6 +241,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/jquery-inputmask.js"></script>
+    <script src="js/maskmoney.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/scripts.js"></script>
 

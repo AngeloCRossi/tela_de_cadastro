@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $("input#nu_cpfcnpj").inputmask({mask: ['999.999.999-99'], keepStatic: true});
-    $("input#vl_movimentacao").inputmask({mask: ['R$ 999.999,00'], keepStatic: false});
+    $("input#vl_movimentacao").maskMoney({
+                            prefix: "R$",
+                            decimal: ",",
+                            thousands: "."
+                        });
 });
 
 
@@ -52,15 +56,17 @@ window.onload = function() {
         //setando variaveis para pegar os dados
         var vlr_CPF = document.getElementById("nu_cpfcnpj").value;
         var vlr_nome = document.getElementById("no_cliente").value;
-        var vlr_produto = document.getElementById("no_produto").text;
+        var vlr_produto = document.getElementById("no_produto").value;
         var vlr_dt_movimentacao = document.getElementById("dt_movimentacao").value;
         var vlr_vl_movimentacao = document.getElementById("vl_movimentacao").value;
+        var vlr_detalhes_movimentacao = document.getElementById("txt_detalhes").value;
 
         //preenchendo o campo destino
-        document.getElementById("nu_cpfcnpj_visualização").value = vlr_CPF;
+        document.getElementById("nu_cpfcnpj_visualizacao").value = vlr_CPF;
         document.getElementById("no_cliente_visualizacao").value = vlr_nome;
         document.getElementById("no_produto_visualização").value = vlr_produto  ;
         document.getElementById("dt_movimentacao_visualização").value = vlr_dt_movimentacao;
         document.getElementById("vl_movimentacao_visualização").value = vlr_vl_movimentacao;
+        document.getElementById("txt_detalhes_visualizacao").value = vlr_detalhes_movimentacao;
     })
 };
