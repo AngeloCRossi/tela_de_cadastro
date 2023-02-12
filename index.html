@@ -33,7 +33,7 @@
             <div class="tab-content">
                 <div id="menu1" class="tab-pane fade in active panel-body">
                     <h3 id="titulo_navbar">Cadastro de movimentações</h3>
-                    <form>
+                    <form id="form_cadastro">
                         <div class="row">
                             <div class="col-sm-2 col-xl-2 col-md-2 col-lg-2">
                                 <div class="form-group">
@@ -114,15 +114,15 @@
                         <div class="row">
                             <div class="col-sm-3 col-xl-3 col-md-3 col-lg-3">
                                 <div class="form-group">
-                                    <label id="lbl_nu_cpfcpnj" class="mb-0" for="nu_cpfcnpj">CPF</label>
-                                    <input type="text" class="form-control" id="nu_cpfcnpj_visualização" placeholder="" name="nu_cpfcnpj" readonly>
+                                    <label id="lbl_nu_cpfcpnj" class="mb-0" for="nu_cpfcnpj_visualizacao">CPF</label>
+                                    <input type="text" class="form-control" id="nu_cpfcnpj_visualizacao" placeholder="000.000.000-00" name="nu_cpfcnpj_visualizacao" readonly>
                                 </div>
                             </div>
 
                             <div class="col-sm-7 col-xl-7 col-md-7 col-lg-7">
                                 <div class="form-group">
-                                    <label class="mb-0" for="no_cliente">Nome do cliente:</label>
-                                    <input type="text" class="form-control" id="no_cliente" placeholder="Nome do cliente" name="no_cliente" readonly>
+                                    <label class="mb-0" for="no_cliente_visualizacao">Nome do cliente:</label>
+                                    <input type="text" class="form-control" id="no_cliente_visualizacao" placeholder="Nome do cliente" name="no_cliente_visualizacao" readonly>
                                 </div>
                             </div>
                         </div>
@@ -130,22 +130,22 @@
                         <div class="row_2">
                             <div id="produto" class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
-                                    <label class="mb-0" for="no_produto">Produto:</label>
-                                    <input type="text" class="form-control" id="no_produto" placeholder="Produto" name="no_produto" readonly>
+                                    <label class="mb-0" for="no_produto_visualização">Produto:</label>
+                                    <input type="text" class="form-control" id="no_produto_visualização" placeholder="Produto" name="no_produto_visualização" readonly>
                                 </div>
                             </div>
 
                             <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
-                                    <label class="mb-0" for="dt_movimentacao">Data da movimentação:</label>
-                                    <input type="date" class="form-control" id="dt_movimentacao" name="dt_movimentacao" readonly>
+                                    <label class="mb-0" for="dt_movimentacao_visualização">Data da movimentação:</label>
+                                    <input type="date" class="form-control" id="dt_movimentacao_visualização" name="dt_movimentacao_visualização" readonly>
                                 </div>
                             </div>
 
                             <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
-                                    <label class="mb-0" for="vl_movimentacao">Valor da movimentação:</label>
-                                    <input type="text" class="form-control" id="vl_movimentacao" name="vl_movimentacao" placeholder="R$0,00" readonly>
+                                    <label class="mb-0" for="vl_movimentacao_visualização">Valor da movimentação:</label>
+                                    <input type="text" class="form-control" id="vl_movimentacao_visualização" name="vl_movimentacao_visualização" placeholder="R$0,00" readonly>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +234,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/jquery-inputmask.js"></script>
-    <script src="js/moment-with-locale.min.js"></script>
+    <script src="js/moment.min.js"></script>
     <script src="js/scripts.js"></script>
 
 </html>
