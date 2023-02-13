@@ -51,8 +51,6 @@ const form = document.getElementById("form_cadastro");
 window.onload = function() {
     document.getElementById("btn_cadastrar").addEventListener("click", function(event) {
         
-        //console.log(moment("dt_movimentacao").format('L'));
-        
         //setando variaveis para pegar os dados
         var vlr_CPF = document.getElementById("nu_cpfcnpj").value;
         var vlr_nome = document.getElementById("no_cliente").value;
@@ -64,9 +62,9 @@ window.onload = function() {
         //preenchendo o campo destino
         document.getElementById("nu_cpfcnpj_visualizacao").value = vlr_CPF;
         document.getElementById("no_cliente_visualizacao").value = vlr_nome;
-        document.getElementById("no_produto_visualização").value = vlr_produto  ;
-        document.getElementById("dt_movimentacao_visualização").value = vlr_dt_movimentacao;
-        document.getElementById("vl_movimentacao_visualização").value = vlr_vl_movimentacao;
+        document.getElementById("no_produto_visualizacao").value = vlr_produto  ;
+        document.getElementById("dt_movimentacao_visualizacao").value = vlr_dt_movimentacao;
+        document.getElementById("vl_movimentacao_visualizacao").value = vlr_vl_movimentacao;
         document.getElementById("txt_detalhes_visualizacao").value = vlr_detalhes_movimentacao;
     })
 };

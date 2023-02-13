@@ -82,25 +82,6 @@
                                 </div>
                             </div>
 
-                            <!-- input type="date" id="data" required>
-                                <p id="exibirData"></p -->
-
-                                    <script>
-                                        document.getElementById("dt_movimentacao").addEventListener("blur", function(event) {
-                                        var data = event.target.value;
-                                        var dataFormatada = new Date(data).toLocaleDateString("pt-BR", {
-                                            day: "2-digit",
-                                            month: "2-digit",
-                                            year: "numeric"
-                                        });
-        
-                                        document.getElementById("dt_movimentacao").innerHTML = dataFormatada;
-                                        });
-                                    </script>
-
-
-
-
                             <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
                                     <label class="mb-0" for="vl_movimentacao">Valor da movimentação:</label>
@@ -143,22 +124,22 @@
                         <div class="row_2">
                             <div id="produto" class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
-                                    <label class="mb-0" for="no_produto_visualização">Produto:</label>
-                                    <input type="text" class="form-control" id="no_produto_visualização" placeholder="Produto" name="no_produto_visualização" readonly>
+                                    <label class="mb-0" for="no_produto_visualizacao">Produto:</label>
+                                    <input type="text" class="form-control" id="no_produto_visualizacao" placeholder="Produto" name="no_produto_visualizacao" readonly>
                                 </div>
                             </div>
 
                             <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
-                                    <label class="mb-0" for="dt_movimentacao_visualização">Data da movimentação:</label>
-                                    <input type="date" class="form-control" id="dt_movimentacao_visualização" name="dt_movimentacao_visualização" readonly>
+                                    <label class="mb-0" for="dt_movimentacao_visualizacao">Data da movimentação:</label>
+                                    <input type="date" class="form-control" id="dt_movimentacao_visualizacao" name="dt_movimentacao_visualizacao" readonly>
                                 </div>
                             </div>
 
                             <div class="col-sm-4 col-xl-4 col-md-4 col-lg-4">
                                 <div class="form-group">
-                                    <label class="mb-0" for="vl_movimentacao_visualização">Valor da movimentação:</label>
-                                    <input type="text" class="form-control" id="vl_movimentacao_visualização" name="vl_movimentacao_visualização" placeholder="R$0,00" readonly>
+                                    <label class="mb-0" for="vl_movimentacao_visualizacao">Valor da movimentação:</label>
+                                    <input type="text" class="form-control" id="vl_movimentacao_visualizacao" name="vl_movimentacao_visualizacao" placeholder="R$0,00" readonly>
                                 </div>
                             </div>
                         </div>
